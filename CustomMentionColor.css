@@ -5,9 +5,10 @@
     INSTRUCTIONS
     Define new colors above formated like so.
     --nameofvar: hue saturation lightness;
+    ALL COLORS MUST BE IN HSL.
     There needs to be a new vairable per person if you want a new color per person.
     As for applying that color, go to the "COLOR PER PERSON" section and enter in their username where it says username in quotes. 
-    Leave the quotation marks. Enter in the name of your variable where it says "personscolor" replace all instances of "personscolor" and "username". 
+    LEAVE THE QUOTATION MARKS. Enter in the name of your variable where it says "personscolor" replace all instances of "personscolor" and "username". 
     To add a new color for another person copy the code and replace it the old information with the new information
     */
 }
@@ -39,5 +40,4 @@
 
 [data-author-username="username"] .mentioned__5126c:before {
 	background: var(--personscolor);
-
 }

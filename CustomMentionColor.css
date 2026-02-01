@@ -1,0 +1,42 @@
+:root {
+    --defaultmentioncolor:     38 95.7% 54.1%;
+    --personscolor:            214 100% 59.6%;
+    /*
+    INSTRUCTIONS
+    Define new colors above instructions formated like so.
+    --nameofvar: hue saturation lightness;
+    There needs to be a new vairable per person if you want a new color per person.
+    As for applying that color, go to the "COLOR PER PERSON" section and enter in their username where it says username in quotes. 
+    Leave the quotation marks. Enter in the name of your variable where it says "personscolor" replace all instances of "personscolor" and "username". 
+    To add a new color for another person copy the code and replace it the old information with the new information
+    */
+}
+
+
+/*                    DEFAULT COLOR                  */
+
+.mentioned__5126c {
+    background: color-mix(in oklab,hsl(var(--defaultmentioncolor)/0.0784313725490196) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0784313725490196) var(--custom-theme-base-color-amount,0%));
+}
+
+.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover  {
+    background: color-mix(in oklab,hsl(var(--defaultmentioncolor)/0.0392156862745098) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0392156862745098) var(--custom-theme-base-color-amount,0%));
+}
+
+.mentioned__5126c:before {
+	background: var(--defaultmentioncolor);
+}
+
+/*                 COLOR PER PERSON                 */
+
+[data-author-username="username"] .mentioned__5126c {
+    background: color-mix(in oklab,hsl(var(--personscolor)/0.0784313725490196) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0784313725490196) var(--custom-theme-base-color-amount,0%));
+}
+
+.mouse-mode.full-motion [data-author-username="username"] .message__5126c.mentioned__5126c:hover  {
+    background: color-mix(in oklab,hsl(var(--personscolor)/0.0392156862745098) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0392156862745098) var(--custom-theme-base-color-amount,0%));
+}
+
+[data-author-username="username"] .mentioned__5126c:before {
+	background: var(--personscolor);
+}

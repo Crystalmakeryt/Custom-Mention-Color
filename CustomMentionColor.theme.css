@@ -1,3 +1,9 @@
+/**
+ * @name CustomMentionColor
+ * @description Allows you to add a custom mention color to each person or just a new default
+ * @author Crystalmaker
+ * @version 1.0.0
+*/
 :root {
     --defaultmentioncolor:     38 95.7% 54.1%;
     --personscolor:            214 100% 59.6%;
@@ -41,3 +47,4 @@
 [data-author-username="username"] .mentioned__5126c:before {
 	background: var(--personscolor);
 }
+

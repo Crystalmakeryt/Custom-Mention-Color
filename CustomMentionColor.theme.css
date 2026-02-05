@@ -5,8 +5,10 @@
  * @version 1.0.0
 */
 :root {
-    --defaultmentioncolor:     38 95.7% 54.1%;
-    --personscolor:            214 100% 59.6%;
+    --defaultmentioncolor:     38 95.7% 54.1%; /*The Default Color applied to anyone without a custom color.*/
+    --person1color:            214 100% 59.6%; /*A preset variable put here as a stand-in to show how the system works*/
+    --person2color:            24 100% 59.6%;
+    --person3color:            14 100% 59.6%;
     /*
     INSTRUCTIONS
 	GET THE ThemeAttributes PLUGIN. THIS THEME WILL NOT WORK WITHOUT IT
@@ -15,8 +17,9 @@
     ALL COLORS MUST BE IN HSL.
     There needs to be a new variable per person if you want a new color per person.
     As for applying that color, go to the "COLOR PER PERSON" section and enter their username where it says username in quotes. 
-    LEAVE THE QUOTATION MARKS. Enter the name of your variable where it says "personscolor", replace all instances of "personscolor" and "username". 
-    To add a new color for another person, copy the code and replace the old information with the new information
+    LEAVE THE QUOTATION MARKS. Enter the name of your variable where it says "person#color", replace all instances of "person#color" and "username#". 
+    To add a new color for another person, copy the code and replace the old information with the new information.
+    If you do wish to skip variables, remove the var(--varname) part of the code or the code will not work.
     */
 }
 
@@ -36,17 +39,47 @@
 }
 
 /*                 COLOR PER PERSON                 */
+/*Person1*/
 
-[data-author-username="username"] .mentioned__5126c {
-    background: color-mix(in oklab,hsl(var(--personscolor)/0.0784313725490196) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0784313725490196) var(--custom-theme-base-color-amount,0%));
+[data-author-username="username1"] .mentioned__5126c {
+    background: color-mix(in oklab,hsl(var(--person1scolor)/0.0784313725490196) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0784313725490196) var(--custom-theme-base-color-amount,0%));
 }
 
-.mouse-mode.full-motion [data-author-username="username"] .message__5126c.mentioned__5126c:hover  {
-    background: color-mix(in oklab,hsl(var(--personscolor)/0.0392156862745098) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0392156862745098) var(--custom-theme-base-color-amount,0%));
+.mouse-mode.full-motion [data-author-username="username1"] .message__5126c.mentioned__5126c:hover  {
+    background: color-mix(in oklab,hsl(var(--person1color)/0.0392156862745098) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0392156862745098) var(--custom-theme-base-color-amount,0%));
 }
 
-[data-author-username="username"] .mentioned__5126c:before {
-	background: var(--personscolor);
+[data-author-username="username1"] .mentioned__5126c:before {
+	background: var(--person1color);
 }
 
+/*Person2*/
 
+[data-author-username="username2"] .mentioned__5126c {
+    background: color-mix(in oklab,hsl(var(--person1scolor)/0.0784313725490196) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0784313725490196) var(--custom-theme-base-color-amount,0%));
+}
+
+.mouse-mode.full-motion [data-author-username="username2"] .message__5126c.mentioned__5126c:hover  {
+    background: color-mix(in oklab,hsl(var(--person1color)/0.0392156862745098) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0392156862745098) var(--custom-theme-base-color-amount,0%));
+}
+
+[data-author-username="username2"] .mentioned__5126c:before {
+	background: var(--person1color);
+}
+
+/*Person3*/
+
+[data-author-username="username3"] .mentioned__5126c {
+    background: color-mix(in oklab,hsl(var(--person1scolor)/0.0784313725490196) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0784313725490196) var(--custom-theme-base-color-amount,0%));
+}
+
+.mouse-mode.full-motion [data-author-username="username3"] .message__5126c.mentioned__5126c:hover  {
+    background: color-mix(in oklab,hsl(var(--person1color)/0.0392156862745098) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0392156862745098) var(--custom-theme-base-color-amount,0%));
+}
+
+[data-author-username="username3"] .mentioned__5126c:before {
+	background: var(--person1color);
+}
+
+/*Person4*/
+/*Add more if you want the above are just for example*/

@@ -30,7 +30,7 @@
     background: color-mix(in oklab,hsl(var(--defaultmentioncolor)/0.0784313725490196) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0784313725490196) var(--custom-theme-base-color-amount,0%));
 }
 
-.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover  {
+.mouse-mode.full-motion .message__5126c.mentioned__5126c:hover, .message__5126c.mentioned__5126c.selected__5126c  {
     background: color-mix(in oklab,hsl(var(--defaultmentioncolor)/0.0392156862745098) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0392156862745098) var(--custom-theme-base-color-amount,0%));
 }
 
@@ -45,7 +45,7 @@
     background: color-mix(in oklab,hsl(var(--person1color)/0.0784313725490196) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0784313725490196) var(--custom-theme-base-color-amount,0%));
 }
 
-.mouse-mode.full-motion [data-author-username="username1"] .message__5126c.mentioned__5126c:hover  {
+.mouse-mode.full-motion [data-author-username="username1"] .message__5126c.mentioned__5126c:hover, [data-author-username="username1"] .message__5126c.mentioned__5126c.selected__5126c  {
     background: color-mix(in oklab,hsl(var(--person1color)/0.0392156862745098) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0392156862745098) var(--custom-theme-base-color-amount,0%));
 }
 
@@ -59,7 +59,7 @@
     background: color-mix(in oklab,hsl(var(--person2color)/0.0784313725490196) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0784313725490196) var(--custom-theme-base-color-amount,0%));
 }
 
-.mouse-mode.full-motion [data-author-username="username2"] .message__5126c.mentioned__5126c:hover  {
+.mouse-mode.full-motion [data-author-username="username2"] .message__5126c.mentioned__5126c:hover, [data-author-username="username2"] .message__5126c.mentioned__5126c.selected__5126c  {
     background: color-mix(in oklab,hsl(var(--person2color)/0.0392156862745098) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0392156862745098) var(--custom-theme-base-color-amount,0%));
 }
 
@@ -73,7 +73,7 @@
     background: color-mix(in oklab,hsl(var(--person3color)/0.0784313725490196) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0784313725490196) var(--custom-theme-base-color-amount,0%));
 }
 
-.mouse-mode.full-motion [data-author-username="username3"] .message__5126c.mentioned__5126c:hover  {
+.mouse-mode.full-motion [data-author-username="username3"] .message__5126c.mentioned__5126c:hover, [data-author-username="username3"] .message__5126c.mentioned__5126c.selected__5126c  {
     background: color-mix(in oklab,hsl(var(--person3color)/0.0392156862745098) 100%,hsl(var(--custom-theme-base-color-hsl,0 0% 0%)/0.0392156862745098) var(--custom-theme-base-color-amount,0%));
 }
 

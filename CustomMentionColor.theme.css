@@ -2,7 +2,7 @@
  * @name CustomMentionColor
  * @description Allows you to add a custom mention color to each person or just a new default
  * @author Crystalmaker
- * @version 1.0.0
+ * @version 0.1.0
 */
 :root {
     --defaultmentioncolor:     38 95.7% 54.1%; /*The Default Color applied to anyone without a custom color.*/
